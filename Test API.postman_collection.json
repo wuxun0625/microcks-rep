@@ -86,7 +86,13 @@
 							"name": "200Retrieve a list of orders",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "private-result",
+										"value": "2",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": ""

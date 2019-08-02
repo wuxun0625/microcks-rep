@@ -53,7 +53,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://order?status={{status}}&page={{page}}",
+									"raw": "http://order?status=1&page=0",
 									"host": [
 										"http:"
 									],
@@ -66,11 +66,11 @@
 									"query": [
 										{
 											"key": "status",
-											"value": "{{status}}"
+											"value": "1"
 										},
 										{
 											"key": "page",
-											"value": "{{page}}"
+											"value": "0"
 										}
 									]
 								}

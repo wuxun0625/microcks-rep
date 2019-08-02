@@ -120,6 +120,51 @@
 							"header": null,
 							"cookie": [],
 							"body": "\"{\\\"id\\\":2,\\\"category\\\":{\\\"id\\\":1,\\\"name\\\":\\\"Animal\\\"},\\\"name\\\":\\\"cat\\\",\\\"photoUrls\\\":[\\\"string\\\"],\\\"tags\\\":[{\\\"id\\\":1,\\\"name\\\":\\\"domestic\\\"}],\\\"status\\\":\\\"available\\\"}\""
+						},
+						{
+							"name": "200 by header Retrieve a list of orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "private-result",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://order?status={{status}}&page={{page}}",
+									"host": [
+										"http:"
+									],
+									"port": "",
+									"path": [
+										"",
+										"",
+										"order"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "{{status}}"
+										},
+										{
+											"key": "page",
+											"value": "{{page}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "cool~~~~~"
 						}
 					]
 				},

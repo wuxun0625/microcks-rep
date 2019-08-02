@@ -44,6 +44,45 @@
 					},
 					"response": [
 						{
+							"name": "Retrieve a list of orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://order?status=1&page=1",
+									"host": [
+										"http:"
+									],
+									"port": "",
+									"path": [
+										"",
+										"",
+										"order"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "1"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
 							"name": "200Retrieve a list of orders",
 							"originalRequest": {
 								"method": "GET",
@@ -75,6 +114,8 @@
 									]
 								}
 							},
+							"status": "OK",
+							"code": 200,
 							"_postman_previewlanguage": "text",
 							"header": null,
 							"cookie": [],

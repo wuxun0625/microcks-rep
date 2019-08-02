@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "441d2db7-9d8e-4b97-aff0-a1ef99615624",
+		"name": "Test API",
+		"description": "version=1.0 - Description for Test API using Apicurio Studio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "Retrieve a list of orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http:///order?status={{status}}&page={{page}}",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"order"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "{{status}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "Retrieve a list of orders"
+					},
+					"response": [
+						{
+							"name": "200Retrieve a list of orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://order?status={{status}}&page={{page}}",
+									"host": [
+										"http:"
+									],
+									"port": "",
+									"path": [
+										"",
+										"",
+										"order"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "{{status}}"
+										},
+										{
+											"key": "page",
+											"value": "{{page}}"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "text",
+							"header": null,
+							"cookie": [],
+							"body": "\"{\\\"id\\\":2,\\\"category\\\":{\\\"id\\\":1,\\\"name\\\":\\\"Animal\\\"},\\\"name\\\":\\\"cat\\\",\\\"photoUrls\\\":[\\\"string\\\"],\\\"tags\\\":[{\\\"id\\\":1,\\\"name\\\":\\\"domestic\\\"}],\\\"status\\\":\\\"available\\\"}\""
+						}
+					]
+				},
+				{
+					"name": "Create (place) a new order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The order to create"
+						},
+						"url": "http:///order",
+						"description": "Create (place) a new order"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve and existing order using its id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http:///order/:id",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"order",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						},
+						"description": "Retrieve an existing order using its id"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an existing order using its id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http:///order/:id",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"order",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						},
+						"description": "Delete an existing order using its id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for order"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7a0461f1-95b0-4d52-bb8b-97570a4aec43",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e57bfa0c-9bdb-46f4-8742-f1725dbb1f14",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
